@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+				if(window.orientation === 180 || window.orientation === 0) {
+					alert('竖屏状态！');
+				}
+				if(window.orientation === 90 || window.orientation === -90) {
+					alert('横屏状态！');
+				}
+			}, false);
+		</script>
+	</body>
+
+</html>
